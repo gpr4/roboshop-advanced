@@ -10,7 +10,7 @@ spec:
   ports:
   - port: 27017
     name: mongodb
-  clusterIP: None #headless service
+  clusterIP: None # headless service
   selector:
     name: mongodb
     tier: db
