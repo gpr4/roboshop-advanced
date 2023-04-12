@@ -38,7 +38,7 @@ spec:
         image: gopalareddy/catalogue:k8
         envFrom:
         - ConfigMapRef:
-          name: catalogue-config
+           name: catalogue-config
         ports:
         - containerPort: 80
 
