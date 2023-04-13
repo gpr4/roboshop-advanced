@@ -38,8 +38,8 @@ spec:
         imagePullPolicy: Always
         image: gopalareddy/catalogue:k8
         envFrom:
-        - ConfigMapRef:
-           name: catalogue-config
+        - configMapRef:
+            name: catalogue-config
         ports:
         - containerPort: 8080
 
