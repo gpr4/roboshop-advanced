@@ -71,7 +71,10 @@ data:
              proxy_pass http://shipping/;
             }
 
-            
+            location /api/payment/ {
+             proxy_pass http://payment/;
+            }
+
             location /nginx_status {
                 stub_status on;
                 access_log off;
