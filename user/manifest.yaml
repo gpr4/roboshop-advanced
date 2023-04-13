@@ -3,6 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
  name: user-config
+ namespace: roboshop
 data:
  REDIS_HOST: "redis"
  MONGO_URL: "mongodb://mongodb:27017/catalogue"
@@ -50,7 +51,7 @@ metadata:
  namespace: roboshop
 spec:
  selector:
-  server: user
+  name: user
   tier: app
  ports:
   - protocol: TCP
