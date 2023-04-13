@@ -6,6 +6,7 @@ metadata:
  namespace: roboshop
 data:
  MONGO_URL: "mongodb://mongodb:27017/catalogue"
+
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -40,7 +41,7 @@ spec:
         - ConfigMapRef:
            name: catalogue-config
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 
 ---
 apiVersion: v1
