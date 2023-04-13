@@ -54,6 +54,7 @@ data:
             root   /usr/share/nginx/html;
             try_files $uri /images/placeholder.jpg;
             }
+            
             location /api/catalogue/ {
              proxy_pass http://catalogue/;
             }
