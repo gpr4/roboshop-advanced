@@ -14,6 +14,7 @@ spec:
   selector:
     name: mongodb
     tier: db
+
 ---
 apiVersion: apps/v1
 kind: StatefulSet
